@@ -66,7 +66,7 @@ class TestConstructorNavigation:
 
         driver.find_element(*Locators.BUTTON_BUNS).click()
         assert driver.find_element(*Locators.HEADER_BUNS).is_displayed()
-        driver.quit()
+        
 #Переход к конструктору - соусы
     def test_navigation_constructor_to_sauces(self, driver):
         WebDriverWait(driver, 3).until(
